@@ -79,3 +79,9 @@ button {
     color: #ffffff;
     background-color: #6e6e6e48;
 }
+
+@media only screen and (max-width: 600px) {
+    .button{
+        -webkit-tap-highlight-color: transparent;
+    }
+}
