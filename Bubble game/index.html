@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulbble Game by Shivam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Top panel of the container -->
+        <div class="cont-top">
+            <div class="element">
+                <h3>Hit</h3>
+                <span id="hit" class="box">5</span>
+            </div>
+            <div class="element">
+                <h3>Timer</h3>
+                <span id="timerval" class="box">60</span>
+                <!-- Time increment decrement box here -->
+                <div class="timeSetCont">
+                    <button class="incDecTimeBtn" style="color:rgb(0, 255, 72)" type="button" onclick="incTime()">&uarr;</button> 
+                    <button class="incDecTimeBtn" style="color:rgb(255, 38, 0)" type="button" onclick="decTime()">&darr;</button> 
+                </div>
+            </div>
+            <div class="element">
+                <h3>Score</h3>
+                <span id="scoreBox" class="box">0</span>
+            </div>
+        </div>
+
+        <!-- Bottom panel of the container -->
+        <div class="cont-bottom">
+            <div class="bubble"></div>
+        </div>
+    </div>
+
+    <!-- A button for restarting game -->
+     <div class="restartBtnCont">
+        <button type="button" onclick="restartGame()">Restart</button>
+     </div>
+
+
+    <!-- Adding javaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
