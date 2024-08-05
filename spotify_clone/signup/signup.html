@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Spotify Clone</title>
+    <link rel="shortcut icon" href="/Utilities-folder/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/css/utility.css">
+    <link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="signup-box">
+            <img src="/Utilities-folder/logo.svg" alt="Spotify" class="spotify-logo invert text-center">
+            <h1 class="heading">Sign up to start listening</h1>
+            <form id="signup-form">
+                <div class="input-group">
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" placeholder="Email address" required>
+                    <a class="use-phone" href="#">Use phone number instead.</a>
+                </div>
+                <button type="button" class="next-button">Next</button>
+            </form>
+            <div class="divider">or</div>
+            <div class="social-signup">
+                <div class="google button-cont">
+                    <button class="social-button">
+                        <img src="/Utilities-folder/google.svg" alt="google">
+                        <span class="text-center">Sign up with Google</span>
+                    </button>
+                </div>
+                <div class="fb button-cont">
+                    <button class="social-button">
+                        <img src="/Utilities-folder/fb.svg" alt="fb">
+                        <span class="text-center">Sign up with Facebook</span>
+                    </button>
+                </div>
+                <div class="apple button-cont">
+                    <button class="social-button apple">
+                        <img src="/Utilities-folder/apple.svg" alt="apple">
+                        <span class="text-center">Sign up with Apple</span>
+                    </button>
+                </div>
+            </div>
+            <p class="already-acc">Already have an account? <a href="/login/login.html">Log in here.</a></p>
+        </div>
+    </div>
+    <script src="signup.js"></script>
+</body>
+
+</html>

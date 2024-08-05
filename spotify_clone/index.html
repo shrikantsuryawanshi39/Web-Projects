@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Utilities-folder/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/utility.css">
+    <title>Spotify - Web Player: Music for everyone</title>
+</head>
+
+<body>
+
+    <!--======================= The main container =======================-->
+    <div class="mainContainer bg_black">
+        <!--======================= Left part of the website =======================-->
+        <div class="left bg_black">
+
+            <!--======== Top section of left part ========-->
+            <div class="leftTop bg_gray">
+
+                <!-- Closs icon for sidebar -->
+                <img id="closeBtn" src="/Utilities-folder/cross.svg" alt="x">
+
+                <div class="logo">
+                    <img class="invert" src="/Utilities-folder/logo.svg" alt="Logo">
+                </div>
+                <ul id="left_top_ul">
+                    <li class="cpointer">
+                        <img class="invert left_img" src="/Utilities-folder/home.svg" alt="home">
+                        <span>Home</span>
+                    </li>
+                    <li class="light_gray">
+                        <img class="invert left_img cpointer" src="/Utilities-folder/search.svg" alt="home">
+                        <span>Search</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!--======== Bottom section of left part ========-->
+            <div class="leftBottom bg_gray">
+                <!-- <<== Heading ==>> -->
+                <div class="heading light_gray">
+                    <img class="invert left_img" src="/Utilities-folder/Library.svg" alt="Library">
+                    <h3>Your Library</h3>
+                </div>
+
+                <!-- <<<<====== Song Lists on left bottom ======>>>> -->
+                <div class="playlistName"></div>
+                <div class="song_list_cont">
+                    <ul id="song_list">
+
+                    </ul>
+                </div>
+
+                <!-- <<== Footer ==>> -->
+                <div class="footer">
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/" target="_blank">
+                            <span>Legal</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/safetyandprivacy/" target="_blank">
+                            <span>Safety &amp; Privacy Center</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/" target="_blank">
+                            <span>Privacy Policy</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/cookies-policy/" target="_blank">
+                            <span>Cookies</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3" target="_blank">
+                            <span>About Ads</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/accessibility/" target="_blank">
+                            <span>Accessibility</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--======================= Right part of the website =======================-->
+        <div class="right ">
+            <!-- <<== Header ==>> -->
+            <div class="header">
+
+                <!-- <<== Hamburger, Back and Forward buttons ==>> -->
+                <div class="nav">
+                    <img id="hamburger" src="/Utilities-folder/hamburger.svg" alt="menu">
+
+                    <div class="flexC ">
+                        <img class=" back_forward_btn_img" src="/Utilities-folder/goback.svg" alt="back">
+                        <img class=" back_forward_btn_img" src="/Utilities-folder/goforward.svg" alt="forward">
+                    </div>
+                </div>
+
+                <!-- <<== Login and signup buttons ==>> -->
+                <div class="buttons">
+                    <a href="/signup/signup.html" target="_blank" rel="noopener noreferrer">
+                        <button class="signUp_btn cpointer">Sign up</button>
+                    </a>
+                    <a href="/login/login.html" target="_blank" rel="noopener noreferrer">
+                        <button class="logIn_btn cpointer">Log in</button>
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- <<== Spotify Playlist ==>> -->
+            <div class="spotifyPlaylist">
+                <h1 class="playlist_heading">Spotify Playlist</h1>
+
+                <!-- <<== Playlist Card Container ==>> -->
+                <div class="cardContainer">
+
+                </div>
+
+                <!-- <<== Playlist Play bar Container ==>> -->
+                <div class="playbar">
+                    <div class="seekbar">
+                        <div class="seekbar_circle">
+
+                        </div>
+                    </div>
+                    <div id="songInfo">
+                    </div>
+
+                    <div class="control_buttons">
+                        <img id="previous" src="/Utilities-folder/prevsong.svg" alt="Prev">
+                        <img id="playPause" src="/Utilities-folder/playsong.svg" alt="Play/Pause">
+                        <img id="next" src="/Utilities-folder/nextsong.svg" alt="Next">
+                    </div>
+
+                    <div class="timeVolume">
+                        <div id="timeStamps"></div>
+
+                        <div class="volume">
+                            <input type="range" name="volume" id="volumeRange">
+                            <img id="volume_svg" src="/Utilities-folder/volume.svg" alt="Volume">
+                            <p class="volNum">50</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="/js/script.js"></script>
+
+</body>
+
+</html>
