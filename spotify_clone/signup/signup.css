@@ -156,5 +156,8 @@ input[type="email"]:hover{
     .signup-box{
         border: none;
     }
+    .heading{
+        width: 80vw;
+    }
 
 }
