@@ -1,5 +1,7 @@
 # Spotify Clone Project
 
+Live Demo:- https://spotifycloneprojectshivam.freewebhostmost.com
+
 This project is a front-end clone of Spotify that emulates some of the key features of the popular music streaming platform. The application is built with HTML, CSS, and JavaScript, providing a seamless user experience across different devices.
 
 ## Features
