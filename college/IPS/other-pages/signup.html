@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="website icon" type="png" href="../img/ips-logo-main.png">
+
+    <link rel="stylesheet" href="signup.css">
+
+    <!-- header font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&family=Josefin+Sans&family=Jost&family=Lexend:wght@300&family=Signika+Negative&display=swap"
+        rel="stylesheet">
+
+
+    <!-- logo font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&family=Josefin+Sans&family=Jost&family=Lexend:wght@300&family=Pixelify+Sans:wght@500;600&family=Signika+Negative&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <img id="logoimg" src="../img/ips-logo-main.png" alt="Logo">
+            </a>
+            <h1 class="logo-name"></h1> <!-- name added in css -->
+        </div>
+
+        <ul id="nav-ul">
+            <a class="home" href="../index.html">
+                <li>Home</li>
+            </a>
+            <a class="about" href="../header/about.html">
+                <li>About</li>
+            </a>
+            <a class="all-courses" href="../header/all-courses.html">
+                <li>All Courses</li>
+            </a>
+            <a class="contact" href="../header/contact.html">
+                <li>Contact</li>
+            </a>
+            <a class="updates" href="../header/updates.html">
+                <li>Updates</li>
+            </a>
+        </ul>
+
+        <form id="searchbar" action="https://www.google.com/search" method="GET">
+            <input type="text" name="query" placeholder="Search...">
+            <button type="submit">Search</button>
+        </form>
+
+        <!-- ///////////////////////////////////////////////////////////////// -->
+
+        <!-- The login Buttons-->
+
+        <div class="register">
+
+            <a href="../other-pages/login.html">
+                <button id="loginBtn">Login</button>
+            </a>
+        </div>
+    </header>
+
+    <!-- /////////////////////////////////////////////////////////////////////// -->
+
+    <!-- Login Form here  -->
+
+    <!-- loading bar -->
+    <div class="loading-bar"></div>
+
+    <div class="full-container">
+
+
+        <Div class="container">
+            <h2>Sign Up Now</h2>
+            <!-- text  -->
+            <form action="backend.php" method="post">
+                <div class="form-group">
+                    <input type="text" placeholder="Full Name" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" id="username" name="username" placeholder="Create Username" required>
+
+                </div>
+
+                <div class="form-group">
+                    <input type="email" placeholder="Enter Email ID" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" name="phone" maxlength="10" placeholder="Contact No..." required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" name="password" placeholder="Password" maxlength="8" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="confirmpassword" name="confirmpassword" maxlength="8"
+                        placeholder="Confirm Password" required>
+                </div>
+                <!-- radio  -->
+                <div class="form-radio-group">
+                    <h5>Are you a student of IPS college</h5>
+                    <div class="radiobtn">
+                        <input type="radio" name="Radiobutton" id="form-radio-id-yes">
+                        <label for="form-radio-id-yes">Yes</label>
+                    </div>
+                    <div class="radiobtn">
+                        <input type="radio" name="Radiobutton" id="form-radio-id-no">
+                        <label for="form-radio-id-no">No</label>
+                    </div>
+                </div>
+                <button type="submit" class="submit-btn">Signup</button>
+            </form>
+        </div>
+
+        <footer>
+            <div class="footer">
+                <div class="copyright">
+                    <strong> 2023 Copyright &copy; All rights reserved </strong>
+                </div>
+                <div class="developer">
+                    <a href="https://instagram.com/tf.xshivam?igshid=MzRlODBiNWFlZA==" target="_blank">
+                        <span>by Shivam Suryawanshi</span>
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+
+</body>
+
+</html>

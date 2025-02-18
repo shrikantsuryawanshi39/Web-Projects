@@ -1,0 +1,612 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    width: 100%;
+
+    background: linear-gradient(to right, aquamarine, rgb(255, 113, 234), rgb(241, 199, 120));
+
+    /* for non-scrolling */
+    /* position: fixed;
+    top: 0;
+    left: 0; */
+}
+
+.logo {
+    display: flex;
+    /* position: relative; */
+    /* left: 50px; */
+    align-items: center;
+}
+
+#logoimg {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+/* name after logo by CSS ::after property  */
+.logo-name::after {
+    content: "Indira Priyadarshini College";
+}
+
+.logo-name {
+    font-size: 15px;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+}
+
+#nav-ul {
+    display: flex;
+    padding: 15px 0px 0px 40px;
+}
+
+#nav-ul li {
+    list-style: none;
+    margin-left: 30px;
+    /* align-items: center; */
+    position: relative;
+    bottom: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Jost', sans-serif;
+    font-family: 'Lexend', sans-serif;
+    font-family: 'Signika Negative', sans-serif;
+    cursor: pointer;
+    /* border-bottom: 1px solid red; */
+}
+
+#nav-ul a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+#nav-ul .home li{
+    border-bottom: 1px solid rgb(132, 20, 0);
+}
+
+#nav-ul a li:hover {
+    font-weight: bold;
+    border-bottom: 1px solid rgb(72, 255, 0);
+}
+
+/* #nav-ul a li:active{
+    border-bottom: 1px solid rgb(72, 255, 0);
+
+} */
+
+#nav-ul li:active {
+    color: rgb(76, 0, 0);
+}
+
+#searchbar {
+    /* margin: 15px 0px 0px 30px; */
+    align-items: center;
+}
+
+#searchbar input {
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 5px;
+
+}
+
+#searchbar ::placeholder {
+    color: rgb(37, 35, 35);
+    /* opacity: 1; */
+}
+
+#searchbar button {
+    padding: 3px;
+    border-radius: 50px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(to right, rgb(52, 0, 0), rgb(138, 90, 0));
+    cursor: pointer;
+}
+
+#searchbar button:hover {
+    background: linear-gradient(to right, rgb(75, 0, 0), rgb(159, 103, 0));
+}
+
+#searchbar button:active {
+    color: rgb(253, 255, 194);
+}
+
+
+/* .bar-img{
+    margin: 0 0 50px 0;
+} */
+
+
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* register  */
+
+.register a {
+    text-decoration: none;
+}
+
+/* Style for the login button */
+#loginBtn {
+    padding: 10px 20px;
+    background-color: #0080ff;
+    border-radius: 6px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+#loginBtn:hover {
+    background-color: #00a2ff;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.705);
+}
+
+#loginBtn:active {
+    background-color: rgb(81, 217, 255);
+}
+
+/* style for sign in button  */
+
+#signupBtn {
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border-radius: 6px;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+#signupBtn:hover {
+    background-color: #ffffff;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.705);
+}
+
+#signupBtn:active {
+    background-color: rgba(130, 130, 130, 0.753);
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+.intro-bar-img {
+    background-image: url('img/IPS-clg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+    background-color: black;
+    box-shadow: 0px 0px 30px black;
+    position: relative;
+    z-index: 2;
+}
+
+
+
+.courses-section {
+
+    background: linear-gradient(to right, #fff3f3 , #ffe1e1);
+    display: block;
+    text-align: center;
+    border: 2px solid rgb(126, 126, 126);
+    margin: 0 0 50px 0;
+    border-top: none;
+    padding: 50px 0 0 0;
+}
+
+.courses-title {
+    display: inline-block;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.courses-title span {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    color: rgb(47, 18, 18);
+}
+
+.courses-title h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    border-bottom: 3px solid rgb(0, 72, 255);
+    margin: 5px 0;
+}
+
+/* .card-container {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 50px 0;
+}
+
+.card {
+    height: 50vh;
+    width: 50vh;
+    margin: 0 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+
+} */
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 50px 0;
+}
+
+.card-container a{
+    text-decoration: none;
+    color: black;
+}
+
+.card {
+    height: 350px;
+    width: 370px;
+    /* Adjust the width for larger screens */
+    margin: 0 30px;
+    /* Add some spacing between cards */
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 8px rgb(103, 103, 103);
+    background-color: rgb(239, 239, 239);
+}
+
+.card:hover {
+    box-shadow: 0px 0px 20px rgb(70, 70, 70);
+}
+
+/* Courses Containers */
+
+.course01 img {
+    width: 80px;
+    margin: 5px;
+}
+
+
+.course02 img {
+    width: 80px;
+    margin: 5px;
+}
+
+.course03 img {
+    width: 80px;
+    margin: 5px;
+}
+
+
+.course01:hover {
+    transition: 0.3s ease-in;
+    background-color: white;
+
+}
+
+.course02:hover {
+    transition: 0.3s ease-in;
+    background-color: white;
+}
+
+.course03:hover {
+    transition: 0.3s ease-in;
+    background-color: white;
+}
+
+
+.course01 span h3 {
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.course01 span h3::after {
+    content: " ( Bachelor of Computer Applications )";
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.course02 span h3 {
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.course02 span h3::after {
+    content: " ( Bachelor of Commerce )";
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.course03 span h3 {
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.course03 span h3::after {
+    content: " ( Bachelor of Technologys )";
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.course01 p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 4px;
+}
+
+.card p::first-letter{
+    color: rgb(0, 1, 49);
+    font-size: 24px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.course02 p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 4px;
+}
+
+
+.course03 p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 4px;
+}
+
+
+
+
+
+/* View More button of cards  */
+.view-more-cards {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.view-more-cards h4 {
+    border: 2px solid rgb(0, 49, 108);
+    background-color: rgba(255, 225, 0, 0.122);
+    border-radius: 6px;
+    width: 30%;
+    height: 35px;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 30px 0;
+}
+
+.view-more-cards h4:hover {
+    /* transition: 0.3s ease-in; */
+    background-color: rgba(255, 225, 0, 0.359);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.193);
+}
+
+/* ////////////////////////////////////////////////////// */
+
+.all-courses-btn {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.all-courses-btn a {
+    border: 2px solid rgb(0, 103, 0);
+    background-color: rgba(161, 246, 255, 0.371);
+    border-radius: 6px;
+    width: 40%;
+    height: 45px;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 30px 0;
+}
+
+.all-courses-btn a:hover {
+    background-color: rgba(181, 255, 161, 0.484);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.512);
+    transition: 0.3s ease-in;
+}
+
+/* /////////////////////////////////////////////////// */
+
+/* Footer section */
+
+footer {
+    background-color: #002331;
+    padding: 15px 0;
+}
+
+/* .footer{
+    display: flex;
+    justify-content:space-around;
+} */
+
+.copyright strong {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* color: red; */
+}
+
+.developer a span {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.developer a {
+    text-decoration: none;
+    color: rgb(0, 255, 255);
+}
+
+/* ///////////////////////////////////////////////////////////////// */
+
+/*     Notice Section      */
+
+#about-section {
+    /* width: 100%; */
+    height: 100%;
+    margin: 0px 0px 50px 0px;
+    padding: 40px 0;
+    background: linear-gradient(to right, #fff3f3 , #ffe1e1);
+    border: 2px solid rgb(126, 126, 126);
+}
+
+
+.abt-heading {
+    display: flex;
+    justify-content: center;
+    font-size: 45px;
+}
+
+.abt-heading h4 {
+    border-bottom: 3px solid rgb(255, 94, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;cursor: pointer;
+
+    /* margin: 50px 0 0 0; */
+}
+
+.abt-img {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 40px 0;
+}
+
+.img-of-abt {
+    width: 150px;
+}
+
+.main-about {
+    text-align: center;
+}
+
+.main-about h1{
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.ips-abt-headind {
+    text-align: center;
+}
+
+/* (not must) */
+
+.info-abt {
+    color: blue;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.info-abt span {
+    margin-top: 6px;
+    cursor: pointer;
+}
+
+.about-know-more {
+    text-align: center;
+    margin: 40px 0 30px 0;
+    /* font-family:Georgia, 'Times New Roman', Times, serif; */
+}
+
+.about-know-more a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.about-know-more span{
+    border: 2px solid rgb(35, 35, 35);
+    border-radius: 60px;
+    padding: 4px 80px;
+    background-color: rgba(255, 251, 143, 0.326);
+    font-size: 19px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.619);
+}
+
+.about-know-more span:hover{
+    border: 2px solid rgb(35, 35, 35);
+    border-radius: 60px;
+    background-color: rgb(245, 255, 190);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.797);
+    transition: 0.2s ease-in-out;
+}
+
+
+
+
+
+
+/* ///////////////////////////////////////////// */
+
+/* responsive / wrap Cards by CHAT GPT --->>> */
+
+@media screen and (max-width: 768px) {
+    .card-container {
+        flex-wrap: wrap;
+        /* Allow cards to wrap to the next line */
+    }
+
+    .card {
+        width: 80%;
+        /* Adjust the width for smaller screens */
+        margin: 10px 0;
+        /* Add spacing between cards */
+    }
+}
+
+
+
+/* ////////////////////////////////////////////////// */
+
+/* login form from here  */
+
+/* for loading animation  */
+
+.loading-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1.5px;
+    width: 0%;
+    background-color: red;
+    animation: loading 2s linear;
+  }
+  
+  @keyframes loading {
+    0% {
+      width: 0%;
+    }
+    50% {
+      width: 50%;
+    }
+    100% {
+      width: 100%;
+    }
+  }

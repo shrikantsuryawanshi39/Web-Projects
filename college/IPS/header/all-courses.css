@@ -1,0 +1,497 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* header section  */
+
+header {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+    flex-grow: 1;
+    flex-wrap: wrap;
+
+    background: linear-gradient(to right, aquamarine, rgb(255, 113, 234), rgb(241, 199, 120));
+
+    /* for non-scrolling */
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; */
+}
+
+.logo {
+    display: flex;
+    /* position: relative; */
+    /* left: 50px; */
+    align-items: center;
+}
+
+#logoimg {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+
+
+/* name after logo by CSS ::after property  */
+.logo-name::after {
+    content: "Indira Priyadarshini College";
+}
+
+.logo-name {
+    font-size: 15px;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+}
+
+#nav-ul {
+    display: flex;
+    padding: 15px 0px 0px 40px;
+}
+
+#nav-ul li {
+    list-style: none;
+    margin-left: 30px;
+    /* align-items: center; */
+    position: relative;
+    bottom: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Jost', sans-serif;
+    font-family: 'Lexend', sans-serif;
+    font-family: 'Signika Negative', sans-serif;
+    cursor: pointer;
+}
+
+#nav-ul a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+#nav-ul .all-courses li{
+    border-bottom: 1px solid rgb(183, 37, 1);
+}
+
+#nav-ul a li:hover{
+    font-weight: bold;
+    border-bottom: 1px solid rgb(72, 255, 0);
+}
+
+#nav-ul li:active {
+    color: rgb(136, 0, 0);
+}
+
+#searchbar {
+    /* margin: 15px 0px 0px 30px; */
+    align-items: center;
+}
+
+#searchbar input {
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 5px;
+
+}
+
+#searchbar ::placeholder {
+    color: rgb(37, 35, 35);
+    /* opacity: 1; */
+}
+
+#searchbar button {
+    padding: 3px;
+    border-radius: 50px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(to right, rgb(52, 0, 0), rgb(138, 90, 0));
+    cursor: pointer;
+}
+
+#searchbar button:hover {
+    background: linear-gradient(to right, rgb(75, 0, 0), rgb(159, 103, 0));
+}
+
+#searchbar button:active {
+    color: rgb(253, 255, 194);
+}
+
+.intro-bar-img {
+    background-image: url('img/IPS-clg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 59vh;
+    background-color: black;
+    box-shadow: 0px 0px 20px black;
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* register  */
+
+.register a {
+    text-decoration: none;
+}
+
+/* Style for the login button */
+#loginBtn {
+    padding: 10px 20px;
+    background-color: #0080ff;
+    border-radius: 6px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+#loginBtn:hover {
+    background-color: #00a2ff;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.705);
+}
+
+#loginBtn:active {
+    background-color: rgba(0, 134, 60, 0.753);
+}
+
+/* style for sign in button  */
+
+#signupBtn {
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border-radius: 6px;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+#signupBtn:hover {
+    background-color: #ffffff;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.705);
+}
+
+#signupBtn:active {
+    background-color: rgba(0, 134, 60, 0.753);
+}
+
+
+
+/* ///////////////////////////////// */
+
+/* header ^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+
+
+/* courses section>>>>>>>>>>>>>> */
+
+
+.heading-for-courses {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(20, 19, 19);
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    height: 100px;
+    font-size: 40px;
+    padding: 50px 0 0 0;
+}
+
+.heading-for-courses h2{
+    /* text-shadow: 0 0 8px rgba(255, 14, 14, 0.668); */
+    /* text-decoration: underline; */
+    border-bottom: 3px solid #1eff00; 
+
+}
+
+
+.sec-one {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* background-image: url("img/ips-clg-04.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-color: rgb(20, 19, 19);
+    /* background-color: rgb(255, 235, 235); */
+    padding: 50px 0 0 0;
+}
+
+.cards {
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 14px;
+    /* background-color: red; */
+    width: 250px;
+    height: 250px;
+    margin: 50px 40px;
+    box-shadow: 0px 0px 20px rgba(21, 21, 21, 0.499);
+    /* box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.499); */
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    /* align-items: center; */
+    text-align: center;
+    padding: 5px 0 0 0;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    outline: 2px solid orange;
+}
+
+.cards p {
+    margin: 5px 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    padding: 0 5px;
+}
+
+.cards img {
+    width: 55px;
+    margin-top: 0;
+}
+
+.cards .read-more a {
+    border: 2px solid rgb(25, 0, 187);
+    border-radius: 6px;
+    background-color: rgba(0, 4, 255, 0.16);
+    box-shadow: 0px 0px 5px #002331c8;
+    color: black;
+    text-decoration: none;
+    width: 40%;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.read-more {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+
+/* Hover section >>>> */
+.read-more a:hover {
+    transition: 0.3s ease-out;
+    background-color: rgba(0, 234, 255, 0.375);
+    box-shadow: 0px 0px 10px #003246c8;
+}
+
+
+.c-hover:hover {
+    transition: 0.3s all;
+    box-shadow: 0 0 15px  rgba(255, 255, 255, 0.233);
+    background-color:rgb(255, 255, 255);
+    /* border: 2px solid rgb(0, 255, 60); */
+}
+
+
+/* Section two from here  */
+.sec-two {
+    color: white;
+    /* display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    background-image: url("img/ips-clg-04.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-color: rgb(20, 19, 19);
+    /* background-color: rgb(255, 235, 235); */
+    height: 700px;
+    overflow: hidden;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+.heading-of-sec-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(20, 19, 19);
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    height: 100px;
+    font-size: 22px;
+    margin: 30px 0 0 20px;
+}
+
+.heading-of-sec-two h3{
+    border: 1px solid red;
+    border-radius: 100px;
+    width: 40%;
+    height: 70px;
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #08082360;
+}
+
+
+.programs{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px 0 0 0;
+}
+
+.p-cards{
+    border: 2px solid rgb(0, 255, 242);
+    width: 400px;
+    height: 400px;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin: 40px 0  40px 0;
+    padding-top: 10px;
+    background-color: rgb(49, 49, 49);
+}
+
+.p-cards a{
+    text-decoration: none;    
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff700;
+}
+
+.react-workshop:hover{
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.333);
+    background-color: rgb(30, 30, 30);
+    transition: 0.3s ease-out;
+}
+
+.web-dev:hover{
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.333);
+    background-color: rgb(30, 30, 30);
+    transition: 0.3s ease-out;
+}
+.react-workshop a img{
+    width: 150px;
+}
+
+/* .program-name a{
+   
+} */
+
+.program-name a h2{
+    margin: 5px 0 0 0;
+}
+
+.program-details p{
+    margin: 10px 9px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.web-dev a img{
+    width: 150px;
+}
+
+.read-about-pro a{
+    text-decoration: none;
+    color: rgb(253, 198, 115);
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    margin-top: 4px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.read-about-pro a h4{
+    border: 2px solid  rgb(225, 0, 255);
+    border-radius: 5px;
+    width: auto;
+    padding: 5px 10px;
+    background-color: rgb(49, 49, 49);
+}
+
+.read-about-pro a h4:hover{
+    background-color: #1f1f1f;
+    box-shadow: 0 0 2px aqua;
+    transition: 0.3s ease-out;
+}
+
+
+
+
+
+
+
+
+
+
+/* ///////////////////////////////////////////// */
+
+footer {
+    background-color:rgb(20, 19, 19);
+    padding: 15px 0;
+    border-top: 1px solid rgba(0, 255, 34, 0.095);
+}
+
+/* .footer{
+    display: flex;
+    justify-content:space-around;
+} */
+
+.copyright strong {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* color: red; */
+}
+
+.developer a span {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.developer a {
+    text-decoration: none;
+    color: rgb(0, 255, 255);
+}
+
+
+
+/* ////////////////////////////////////////////////// */
+
+/* login form from here  */
+
+/* for loading animation  */
+
+.loading-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1.5px;
+    width: 0%;
+    background-color: red;
+    animation: loading 2s linear;
+  }
+  
+  @keyframes loading {
+    0% {
+      width: 0%;
+    }
+    50% {
+      width: 50%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
