@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - BeatWave Clone</title>
+    <link rel="shortcut icon" href="/Utilities-folder/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/utility.css">
+    <link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="signup-box">
+            <a href="/index.html"><img src="/Utilities-folder/logo-only.png" alt="BeatWave"
+                    class="beatwave-logo invert text-center">
+            </a>
+            <h1 class="heading">Sign up to start listening</h1>
+            <form id="signup-form">
+                <div class="input-group">
+
+                    <div class="username-cont">
+                        <label for="signup-username">Create Username</label>
+                        <input type="text" id="signup-username" placeholder="Create Username" required>
+                    </div>
+
+                    <div class="email-cont">
+                        <label for="email">Email address</label>
+                        <input type="email" id="email" placeholder="Email address" required>
+                    </div>
+
+                    <div class="password-cont">
+                        <label for="signup-password">Create Password</label>
+                        <input type="password" id="signup-password" placeholder="Create a Password" required>
+                    </div>
+                </div>
+                <button type="button" class="next-button" onclick="signup()">Next</button>
+                <p class="message" id="form-message"></p>
+            </form>
+            <div class="divider">or</div>
+            <div class="social-signup">
+                <div class="google button-cont">
+                    <button class="social-button">
+                        <img src="/Utilities-folder/google.svg" alt="google">
+                        <span class="text-center">Sign up with Google</span>
+                    </button>
+                </div>
+                <div class="fb button-cont">
+                    <button class="social-button">
+                        <img src="/Utilities-folder/fb.svg" alt="fb">
+                        <span class="text-center">Sign up with Facebook</span>
+                    </button>
+                </div>
+                <div class="apple button-cont">
+                    <button class="social-button apple">
+                        <img src="/Utilities-folder/apple.svg" alt="apple">
+                        <span class="text-center">Sign up with Apple</span>
+                    </button>
+                </div>
+            </div>
+            <p class="already-acc">Already have an account? <a href="/login/login.html">Log in here.</a></p>
+        </div>
+    </div>
+    <script src="/js/authentication.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+
+/* <<<<<================= Custom Scroll =================>>>>> */
+
+/* Style for webkit browsers (Chrome) */
+::-webkit-scrollbar {
+    width: 8px; /* Width of the vertical scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #2c2c2c; /* Dark background for the track */
+    border-radius: 10px; /* Rounded corners for the track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #555; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for the thumb */
+    min-height: 20px; /* Minimum height of the scrollbar thumb */
+    height: 40px; /* Specific height for the scrollbar thumb */
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: #888; /* Color when hovering over the scrollbar thumb */
+}
+
+/* Hide horizontal scrollbar in webkit browsers */
+::-webkit-scrollbar:horizontal {
+    display: none; /* Hide the horizontal scrollbar */
+}
+
+
+
+/* <<<<<<<============== For showing scrollbar only while hover ===============>>>>>>>>>> */
+
+/* Hide horizontal scrollbar */
+.cardContainer, .leftBottom, .song_list_cont {
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+/* Style for webkit browsers (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+    width: 8px; /* Width of the vertical scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: transparent; /* Make the track transparent */
+}
+
+::-webkit-scrollbar-thumb {
+    background: transparent; /* Make the thumb transparent */
+    border-radius: 10px; /* Rounded corners for the thumb */
+    transition: background-color 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+}
+
+.cardContainer:hover::-webkit-scrollbar-thumb, .leftBottom:hover::-webkit-scrollbar-thumb, .song_list_cont:hover::-webkit-scrollbar-thumb {
+    background: #555; /* Color of the scrollbar thumb on hover */
+    opacity: 1; /* Fully visible on hover */
+}
+
+.cardContainer:hover::-webkit-scrollbar-track, .leftBottom:hover::-webkit-scrollbar-track, .song_list_cont:hover::-webkit-scrollbar-track {
+    background: #2c2c2c; /* Dark background for the track on hover */
+    opacity: 1; /* Fully visible on hover */
+}
+
+/* Hide horizontal scrollbar in webkit browsers */
+::-webkit-scrollbar:horizontal {
+    display: none; /* Hide the horizontal scrollbar */
+}
+
+
+
+
+
+
+
+
+/* <<<<======== other util classes ========>>>> */
+
+.invert{
+    filter: invert(1);
+}
+
+.border{
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.bg_black{
+    background-color: black;
+    color: white;
+}
+
+.bg_gray{
+    background-color: #121212;
+    color: white;
+}
+
+.light_gray{
+    color: #b3b3b3;
+}
+
+.left_img{
+    width: 25px;
+}
+
+.flex{
+    display: flex;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.flexC{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.cpointer{
+    cursor: pointer;
+}
+
+.p_t_15{
+    padding-top: 15px;
+}
+.p_t_10{
+    padding-top: 10px;
+}
+
+.text-center{
+    text-align: center;
+    margin: auto;
+}
+
+.invert{
+    filter: 1;
+}

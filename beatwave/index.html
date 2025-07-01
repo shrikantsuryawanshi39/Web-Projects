@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Utilities-folder/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/utility.css">
+    <link rel="stylesheet" href="/css/bot.css" />
+    <link rel="stylesheet" href="/css/voiceSearch.css">
+    <title>BeatWave - Web Player: Music for everyone</title>
+</head>
+
+
+<body>
+
+    <!--======================= The main container =======================-->
+    <div class="mainContainer bg_black">
+        <!--======================= Left part of the website =======================-->
+        <div class="left bg_black">
+
+            <!--======== Top section of left part ========-->
+            <div class="leftTop bg_gray">
+
+                <!-- Closs icon for sidebar -->
+                <img id="closeBtn" src="/Utilities-folder/cross.svg" alt="x">
+
+                <div class="logo">
+                    <a href="/index.html">
+                        <img class="invert" src="/Utilities-folder/logo.png" alt="Logo">
+                    </a>
+                </div>
+
+                <ul id="left_top_ul">
+                    <li class="cpointer">
+                        <img class="invert left_img" src="/Utilities-folder/home.svg" alt="home">
+                        <a class="homeBtn" href="/index.html">
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="light_gray">
+                        <img class="invert left_img cpointer" src="/Utilities-folder/search-ico.svg" alt="home">
+                        <span id="searchBarContainer">
+                            <input type="search" id="searchBar" placeholder="Search songs..." required>
+                            <button id="mic-btn"><img src="/Utilities-folder/mic-off.svg" alt="🎙️"></button>
+                        </span>
+                        <button type="submit" id="searchSongBtn"><img src="/Utilities-folder/search.svg"
+                                alt="Search"></button>
+                    </li>
+                </ul>
+            </div>
+
+            <!--======== Bottom section of left part ========-->
+            <div class="leftBottom bg_gray">
+                <!-- <<== Heading ==>> -->
+                <div class="heading light_gray">
+                    <img class="invert left_img" src="/Utilities-folder/Library.svg" alt="Library">
+                    <h3>Your Library</h3>
+                </div>
+
+                <!-- <<<<====== Song Lists on left bottom ======>>>> -->
+                <div class="playlistName"></div>
+                <div class="song_list_cont">
+                    <ul id="crr_playing_song">
+
+                    </ul>
+                    <ul id="song_list">
+
+                    </ul>
+                </div>
+
+                <!-- <<== Left Footer ==>> -->
+                <div class="footer">
+                    <div>
+                        <a href="/footer/contact.html" target="_blank">
+                            <span>Contact Us</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="/footer/legal.html" target="_blank">
+                            <span>Legal</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="/footer/Safety-Privacy.html" target="_blank">
+                            <span>Safety &amp; Privacy Center</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="/footer/privacy-policy.html" target="_blank">
+                            <span>Privacy Policy</span>
+                        </a>
+                    </div>
+                    
+                    <!-- <div>
+                        <a href="/footer/cookies.html" target="_blank">
+                            <span>Cookies</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="/footer/about-ads.html" target="_blank">
+                            <span>About Ads</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="/footer/accessibility.html" target="_blank">
+                            <span>Accessibility</span>
+                        </a>
+                    </div> -->
+
+                </div>
+            </div>
+        </div>
+
+        <!--======================= Right part of the website =======================-->
+        <div class="right ">
+            <!-- <<== Header ==>> -->
+            <div class="header">
+
+                <!-- <<== Hamburger, Back and Forward buttons ==>> -->
+                <div class="nav">
+                    <img id="hamburger" src="/Utilities-folder/hamburger.svg" alt="menu">
+
+                    <!-- forward and back buttons -->
+                    <!-- <div class="flexC ">
+                        <img class=" back_forward_btn_img" src="/Utilities-folder/goback.svg" alt="back">
+                        <img class=" back_forward_btn_img" src="/Utilities-folder/goforward.svg" alt="forward">
+                    </div> -->
+
+                    <!-- user profile -->
+                    <div class="flexC user-profile-cont">
+                        <div id="user-profile-circle">
+                            <img class="profile_img" src="/Utilities-folder/profile.svg" alt="Profile">
+                        </div>
+                        <div class="user_name">
+                            User
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <<== Login and signup buttons ==>> -->
+                <div id="buttons">
+                    <a href="/signup/signup.html" rel="noopener noreferrer">
+                        <button class="signUp_btn cpointer">Sign up</button>
+                    </a>
+                    <a href="/login/login.html" rel="noopener noreferrer">
+                        <button class="logIn_btn cpointer">Log in</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- <<== This will pop up when use click on profile ==>> -->
+            <div id="profile-open">
+                <div id="profile-name">
+                    <span>Username : </span>
+                </div>
+                <div id="profile-email">
+                    <span>Email : </span>
+                </div>
+                <div id="logout-btn-cont">
+                    <button class="logout-btn" onclick="logout()">
+                        Log out
+                    </button>
+                </div>
+                <div id="profile-msg">
+                    <a href="/login/login.html">Log In</a> or <a href="/signup/signup.html">Sign Up</a> to view profile information
+                </div>
+            </div>
+
+            <!-- <<== BeatWave Playlist ==>> -->
+            <div class="beatwavePlaylist">
+                <h1 class="playlist_heading">BeatWave Playlist</h1>
+
+                <!-- <<== AI button ==>> -->
+                <button class="ai-button">
+                    <img id="ai-button-image" src="/Utilities-folder/send btn ico/AI-setting-theme.svg" alt="">
+                </button>
+
+                <!-- <<== Playlist Card Container ==>> -->
+                <div class="cardContainer">
+
+                </div>
+
+                <!-- <<== Playlist Play bar Container ==>> -->
+                <div class="playbar">
+                    <div class="seekbar">
+                        <div class="seekbar_circle">
+
+                        </div>
+                    </div>
+                    <div id="songInfo">
+                    </div>
+
+                    <div class="control_buttons">
+                        <img id="previous" src="/Utilities-folder/prevsong.svg" alt="Prev">
+                        <img id="playPause" src="/Utilities-folder/playsong.svg" alt="Play/Pause">
+                        <img id="next" src="/Utilities-folder/nextsong.svg" alt="Next">
+                    </div>
+
+
+                    <div class="timeVolume">
+                        <div class="repeat-and-shuffle">
+                            <img id="repeat" src="/Utilities-folder/repeat.svg" alt="Repeat">
+                            <img id="shuffle" src="/Utilities-folder/shuffle.png" alt="shuffle">
+                        </div>
+                        <div id="timeStamps"></div>
+
+                        <div class="volume">
+                            <input type="range" name="volume" id="volumeRange">
+                            <img id="volume_svg" src="/Utilities-folder/volume.svg" alt="Volume">
+                            <p class="volNum">50</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- <<<<<<<<========== Chat bot AI section =========>>>>>>>> -->
+        <div class="chatbot-card">
+            <div class="chatbot-header">AI Chatbot</div>
+            <div class="chatbot-body" id="chat-body">
+                <p>
+                    <strong>AI:</strong> Hello! How can I help you? (Click send before
+                    starting)
+                </p>
+                <div class="line">-</div>
+            </div>
+            <div class="chatbot-input">
+                <input type="text" id="user-input" placeholder="Type a message..." value="Instruction: Respond in 1-2 sentences only. Keep it short, clear, and relevant.
+                  If asked for songs, provide just 3-5 song names in plain text, separated by commas.
+                  Example: Blinding Lights - The Weeknd, Shape of You - Ed Sheeran, Bad Guy - Billie Eilish.
+                  please use emojis throughout our chat." />
+                <button id="send-btn"><img src="/Utilities-folder/send btn ico/bubble-chat.svg" alt="Send"></button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/js/script.js"></script>
+    <script src="/js/bot.js"></script>
+    <script src="/js/voiceSearch.js"></script>
+    <script src="js/authentication.js"></script>
+
+</body>
+
+</html>

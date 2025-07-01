@@ -1,0 +1,20 @@
+#mic-btn{
+    background: transparent;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 0 solid;
+    overflow: hidden;
+    /* position: absolute;
+    left: 235px;
+    top: 163.5px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mic-btn img{
+    width: 16px;
+    filter: invert(1);
+}
