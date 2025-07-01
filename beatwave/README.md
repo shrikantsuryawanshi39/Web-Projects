@@ -41,8 +41,11 @@
 ## 📷 Screenshots
 
 - Homepage with search and AI chatbot  
-- Voice search and player controls  
+![Screenshot (138)](https://github.com/user-attachments/assets/6eaa5e57-1357-48f1-90bb-be4083c2ec5c)
 - Contact form and additional pages  
+![Screenshot (141)](https://github.com/user-attachments/assets/e05942a0-b424-4b0b-bacb-6666d1c8a1ce)
+![Screenshot (140)](https://github.com/user-attachments/assets/9188e7c3-ef30-4fbd-b46f-b11570b096bd)
+![Screenshot (139)](https://github.com/user-attachments/assets/123a85a2-c3ad-4ad3-96ac-2879e109e418)
 
 ---
 
